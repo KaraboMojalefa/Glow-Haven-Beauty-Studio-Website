@@ -7,7 +7,7 @@
   -Home
   -About
   -Services
-  -Gallery
+  -Gallery (Images used in this project were sourced from Unsplash and Pixels, which provide royalty-free images for educational use.)
   -Contact
   -Booking
 
