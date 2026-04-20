@@ -12,7 +12,7 @@
   -Booking
 
   ##Technoloigies Used
-  -HTML
+  -HTML (Only website structure development)
 
   ##Author
   Karabo Mojalefa
