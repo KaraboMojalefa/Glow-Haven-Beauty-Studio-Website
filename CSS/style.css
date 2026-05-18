@@ -49,3 +49,18 @@ nav a:hover{
 .btn:hover{
     background-color: hotpink;
 }
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th{
+    background-color: hotpink;
+    color: white;
+}
+th, td{
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
