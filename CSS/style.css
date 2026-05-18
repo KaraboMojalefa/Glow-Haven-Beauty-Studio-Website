@@ -39,3 +39,13 @@ nav a:hover{
 .hero p{
     margin-bottom: 20px;
 }
+.btn{
+    background-color: deeppink;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: hotpink;
+}
