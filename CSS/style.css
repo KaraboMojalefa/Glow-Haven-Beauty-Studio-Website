@@ -63,4 +63,22 @@ th, td{
     padding: 12px;
     text-align: center;
 }
-
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.gallery img{
+    width: 300px;
+    border-radius: 10px;
+}
+form{
+    max-width: 500px;
+    margin: auto;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
