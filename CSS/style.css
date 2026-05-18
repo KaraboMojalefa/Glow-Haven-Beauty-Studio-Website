@@ -82,3 +82,10 @@ input, textarea{
     padding: 10px;
     margin-bottom: 15px;
 }
+footer{
+    background-color: hotpink;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
