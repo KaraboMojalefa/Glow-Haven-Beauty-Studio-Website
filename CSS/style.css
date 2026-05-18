@@ -1,18 +1,39 @@
-/* CSS Reset */
+/* Reseting spacing so all browsers start the same */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
+/* Styling the whole page */
 body{
     font-family: Arial, sans-serif;
-    background-color: #fffafc;
+    background-color: #ecb9c9;
     color: #333;
     line-height: 1.6;
 }
+/* Header section at the top with the salon name */
 header{
-    background-color: hotpink;
-    padding: 20px;
+    text-align: center;
+    background-color: #dac1c9;
+    padding: 40px 20px;
+}
+/* Main title for Glow Haven */
+header h1{
+    font-size: 4rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+/* Small line under the title */
+.tagline{
+    font-size: 1.3rem;
+    color: deeppink;
+    font-style: italic;
+}
+/* Keep all contents centered and neat */
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 nav{
     display: flex;
@@ -31,6 +52,7 @@ nav a:hover{
     text-align: center;
     padding: 80px 20px;
     background-color: #ffe4ec;
+    
 }
 .hero h1{
     font-size: 3rem;
@@ -39,29 +61,68 @@ nav a:hover{
 .hero p{
     margin-bottom: 20px;
 }
+/* Gives spacing between different sections */
+section{
+    margin: 50px 0;
+    text-align: center;
+}
+/* Section headings like services and operating hours */
+section h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+/* Paragraph text styling */
+section p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+/* Styling the book appointment button */
 .btn{
     background-color: deeppink;
     color: white;
+    border: none;
     padding: 12px 20px;
     border-radius: 8px;
+    cursor: pointer;
     text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
 }
+/* Change button colour when mouse is over it */
 .btn:hover{
     background-color: hotpink;
+    transform: scale(1.05);
 }
+/* Styling the operating hours and services table  */
 table{
-    width: 100%;
+    width: 60%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: opx 4px 10px rgba(0,0,0,0.1);
 }
+/* Table heading row */
 th{
     background-color: hotpink;
     color: white;
 }
+/* Table cells */
 th, td{
     border: 1px solid black;
-    padding: 12px;
+    padding: 15px;
     text-align: center;
+}
+/* Removing bullets from service list */
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+/* Space between each service */
+ul li{
+    margin: 10px 0;
+    font-size: 1.1rem;
 }
 .gallery{
     display: flex;
@@ -82,26 +143,42 @@ input, textarea{
     padding: 10px;
     margin-bottom: 15px;
 }
+/* Footer at the bottom of the page */
 footer{
     background-color: hotpink;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
+/* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
         flex-direction: column;
         align-items: center;
     }
+    /* Making title smaller for phones */
+    header{
+        font-size: 2.5rem;
+    }
     .gallery{
         flex-direction: column;
         align-items: center;
     }
+    /* Making image fit phone screens */
+    .hero{
+        width: 95%;
+    }
     .hero h1{
         font-size: 2rem;
     }
+    /* Making table fit smaller screens */
     table{
         font-size: 14px;
+        width: 100%;
+    }
+    /* Making text fit nicely */
+    section p{
+        width: 95%;
     }
 }
