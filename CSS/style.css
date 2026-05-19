@@ -10,6 +10,7 @@ body{
     background-color: #ffe4ec;
     color: #333;
     line-height: 1.6;
+    font-size: 1.1rem;
 }
 /* Keep all contents centered and neat */
 .container{
@@ -116,6 +117,51 @@ footer{
     padding: 20px;
     margin-top: 40px;
 }
+/* About page main section */
+.about-section{
+    text-align: center;
+    padding: 50px 20px;
+}
+/* Main heading on the about page */
+.about-section h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+/* Styling the mission and vision headings */
+.about-section h2{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: deeppink;
+    font-size: 2rem;
+}
+/* Paragraph styling for about page text */
+.about-section p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+/* Adds space between sections */
+.about-section p,
+.about-section h2{
+    margin-bottom: 10px;
+}
+/* Small hover effect for navigation */
+nav a{
+    transition: 0.3s;
+}
+/* Changes nav link colour when hovering */
+nav a:hover{
+    color: black;
+}
+
+
+
+
+
+
+
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
@@ -139,6 +185,19 @@ footer{
     /* Making table fit smaller screens */
     table{
         width: 100%;
+    }
+    /* Smaller heading for mobile screens */
+    .about-section h1{
+        font-size: 2.2rem;
+    }
+    /* Mission and vision headings become smaller */
+    .about-section h2{
+        font-size: 1.6rem;
+    }
+    /* Paragraph text fits better on smaller screens */
+    .about-section p{
+        width: 95%;
+        font-size: 1rem;
     }
 }
 
