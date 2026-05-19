@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../PART_1 - KARABO MOJALEFA/CSS/style.css">
 </head>
 <body>
+    <div class="container">
     <!--Header section contains the logo and navigation menu for easy access to all pages-->
     <header>
-    <img src="../PART_1 - KARABO MOJALEFA/Images/Logo.png" alt="Glow Haven Beauty Studio Logo" width="150" height="150">
+    <img src="../PART_1 - KARABO MOJALEFA/Images/Logo.png" alt="Glow Haven Beauty Studio Logo" class="logo">
     <!--Navigation menu allows users to move between different pages of the website-->
     <nav>
         <hr>
@@ -23,23 +24,24 @@
     </nav>
     </header>
     <!--Main section contains the primary content including the hero image, introduction, and call-to-action -->
-    <main class="hero">
+    <main>
         <!--Hero Section-->
+        <section class="hero">
         <h1>Glow Haven Beauty Studio</h1>
-        <img src="../PART_1 - KARABO MOJALEFA/Images/Glow_Haven.jpg" alt="Glow Haven Beauty Studio" width="500">
-        <h2><p class="tagline">Where beauty meets confidence</p></h2>
+        <img src="../PART_1 - KARABO MOJALEFA/Images/Glow_Haven.jpg" alt="Glow Haven Beauty Studio" class="hero-image">
+        <h2 class="tagline">Where beauty meets confidence</h2>
         <p>
                 
-         Glow Haven Beauty Studio is a professional nail and hair salon <br>
-        We provide high-quality beauty services to help our clients look <br>
-        and feel confident. Our trained stylists and nail technicians <br>
-        are passionate about beauty and customer satisfaction. <br>
+         Glow Haven Beauty Studio is a professional nail and hair salon
+        We provide high-quality beauty services to help our clients look
+        and feel confident. Our trained stylists and nail technicians
+        are passionate about beauty and customer satisfaction.
                
         </p>
         <p><b>Book your appointment today!</b></p>
         <!--Call-to-action button linking to booking page-->
-        <a href="booking.html" class="btn"><button>Book Appointment</button></a>
-    
+        <a href="booking.html" class="btn">Book Appointment</a>
+        </section>
       <!--Services Preview-->
       <section>
         <h2>Our services</h2>
@@ -50,36 +52,39 @@
             <li>Skincare </li>
         </ul>
       </section>
+      <!--Why choose us section-->
+    <section>
       <h3>Why Choose Us?</h3>
     <p>
-        We use quality products and maintain a clean and safe environment. <br>
-        Our goal is to make every client leave our salon feeling glamorous and glowing. <br>
+        We use quality products and maintain a clean and safe environment.
+        Our goal is to make every client leave our salon feeling glamorous and glowing.
     </p>
-    <h2>Operating Hours</h3>
-    <p>
-        <table border="1" cellpadding="2" cellspacing="10">
+    </section>
+    <!--Operating hours -->
+    <h2>Operating Hours</h2>
+    <section>
+        <table>
             <tr>
-                <TH>DAY</TH>
-                <TH>TIME</TH>
+                <th>DAY</th>
+                <th>TIME</th>
             </tr>
-            <TR>
-                <td><font size="4">Monday - Friday</font></TD>
-                <td>09:00 - 20:30</td>
-            </TR>
             <tr>
-                <td><font size="4">Saturday</font></td>
+                <td>Monday - Friday</TD>
+                <td>09:00 - 20:30</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
                 <td>09:00 - 18:00</td>
             </tr>
             <tr>
-                <td><font size="4">Sunday</font></td>
+                <td>Sunday</td>
                 <td>Appointments Only</td>
             </tr>
         </table>
+        </section>
     </main>
-
+    </div>
 </body>
-
-<hr>
 <!--Footer section provides copyright information and closes the webpage structure-->
 <footer>
     
@@ -88,4 +93,5 @@
     </p>
     
 </footer>
+</div>
 </html>
