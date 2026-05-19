@@ -145,40 +145,6 @@ footer{
 
 
 
-/* Main title for Glow Haven */
-header h1{
-    font-size: 4rem;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-nav{s
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.hero p{
-    margin-bottom: 20px;
-}
-
-/* Section headings like services and operating hours */
-section h2{
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #222;
-}
-/* Paragraph text styling */
-section p{
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.1rem;
-}
-
-
-
-
-
 .gallery{
     display: flex;
     flex-wrap: wrap;
