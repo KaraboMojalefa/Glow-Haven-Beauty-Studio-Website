@@ -12,6 +12,7 @@
     <img src="../WEBSITE - KARABO MOJALEFA/Images/Logo.png" alt="Glow Haven Beauty Studio Logo" class="logo">
     <!--Navigation menu allows users to move between different pages of the website-->
     <nav>
+        <hr>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
@@ -21,46 +22,47 @@
         <hr>
     </nav>
         </header>
-   
-</body>
 <!--Main section contains all the information a user needs to enter when scheduling an appointment-->
 <main>
 <!--Booking form allows users to request appointments online-->
-        <P>Please fill in the form below to schedule your appointment <br>
-            and we will respond shortly.</P>
-        <H2>Book Your Appointment</H2>
+        
+        <h1>Book Your Appointment</h1>
+        <P>Please fill in the form below to schedule your appointment 
+            and we will respond shortly.
+        </P>
         <form>
          
-            Name:<input type="text" required placeholder="">
-        <br><br>
+            Name:<input type="text" required placeholder="Enter your name">
+        
            
-            Email:<input type="email" required placeholder="">
-        <br><br>
+            Email:<input type="email" required placeholder="example@gmail.com">
+        
           
             Age:<input type="number" required placeholder="">
-        <br> <br>
-            Gender: <br><br>
-        <input type="radio" name="gender">Male <br><br>
-        <input type="radio" name="gender">Female <br><br>
+        
+            Gender:
+        <input type="radio" name="gender">Male 
+        <input type="radio" name="gender">Female 
             <!--Type of service user wants to book-->
-            Select Service: <br><br>
+            Select Service: 
             <select>
                 <option disabled selected value> --Select an option-- </option>
                 <option>Hair Styling</option>
                 <option>Nails</option>
                 <option>Makeup</option>
                 <option>Skincare</option>
-            </select><br><br>
+            </select>
+            <!-- Date selection--> 
              Preferred Date: <br>
-             <input type="date"><br><br>
+             <input type="date">
         <!--Message-->
-            Additional Notes: <br><br>
-            <textarea></textarea><br> <br>
-        <button>Submit Booking</button>
+            Additional Notes: 
+            <textarea rows="5"></textarea>
+        <!--Buttons-->
+        <button type="submit">Submit Booking</button>
         <button type="reset">Clear Form</button>
     </form>
 </main>
-<hr>
 <!--Footer section provides copyright information and closes the webpage structure-->
 <footer>
    
@@ -69,4 +71,5 @@
     </p>
     
 </footer>
+</body>
 </html>
