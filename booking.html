@@ -9,67 +9,68 @@
 <body>
     <!--Header section contains the logo and navigation menu for easy access to all pages-->
     <header>
-    <img src="../WEBSITE - KARABO MOJALEFA/Images/Logo.png" alt="Glow Haven Beauty Studio Logo" class="logo">
-    <!--Navigation menu allows users to move between different pages of the website-->
-    <nav>
-        <hr>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="booking.html">Booking</a>
-        <hr>
-    </nav>
-        </header>
+        <img src="../WEBSITE - KARABO MOJALEFA/Images/Logo.png" alt="Glow Haven Beauty Studio Logo" class="logo">
+        <!--Navigation menu allows users to move between different pages of the website-->
+        <nav>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+            <hr>
+        </nav>
+    </header>
 <!--Main section contains all the information a user needs to enter when scheduling an appointment-->
-<main>
+<main class="booking-section">
 <!--Booking form allows users to request appointments online-->
-        
         <h1>Book Your Appointment</h1>
-        <P>Please fill in the form below to schedule your appointment 
+        <p>
+            Please fill in the form below to schedule your appointment 
             and we will respond shortly.
         </P>
-        <form>
-         
-            Name:<input type="text" required placeholder="Enter your name">
-        
-           
-            Email:<input type="email" required placeholder="example@gmail.com">
-        
-          
-            Age:<input type="number" required placeholder="">
-        
-            Gender:
-        <input type="radio" name="gender">Male 
-        <input type="radio" name="gender">Female 
+        <form class="booking-form">
+            <!--User enters their full name-->
+            <label></label>Name:</label>
+            <input type="text" required placeholder="Enter your name">
+            <!--User enters email-->
+            <label>Email:</label>
+            <input type="email" required placeholder="example@gmail.com">
+            <!--User enters age-->
+            <label>Age:</label>
+            <input type="number" required placeholder="">
+            <!--Gender selection-->
+            <label>Gender:</label>
+            <div class="radio-group">
+            <input type="radio" name="gender">Male 
+            <input type="radio" name="gender">Female 
+            </div>
             <!--Type of service user wants to book-->
-            Select Service: 
+            <label>Select Service:</label>
             <select>
-                <option disabled selected value> --Select an option-- </option>
+                <option disabled selected>--Select an option--</option>
                 <option>Hair Styling</option>
                 <option>Nails</option>
                 <option>Makeup</option>
                 <option>Skincare</option>
             </select>
             <!-- Date selection--> 
-             Preferred Date: <br>
-             <input type="date">
-        <!--Message-->
-            Additional Notes: 
+            <label>Preferred Date:</label>
+            <input type="date">
+            <!--Message-->
+            <label>Additional Notes:</label>
             <textarea rows="5"></textarea>
-        <!--Buttons-->
-        <button type="submit">Submit Booking</button>
-        <button type="reset">Clear Form</button>
+            <!--Buttons-->
+            <button type="submit">Submit Booking</button>
+            <button type="reset">Clear Form</button>
     </form>
 </main>
 <!--Footer section provides copyright information and closes the webpage structure-->
 <footer>
-   
     <p>
         Copyright &copy;2026-&amp;Developed by <b>Karabo Mojalefa</b>
     </p>
-    
 </footer>
 </body>
 </html>
