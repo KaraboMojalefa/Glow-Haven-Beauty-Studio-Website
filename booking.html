@@ -39,12 +39,18 @@
             <input type="email" required placeholder="example@gmail.com">
             <!--User enters age-->
             <label>Age:</label>
-            <input type="number" required placeholder="">
+            <input type="number" min="1" max="100" required placeholder="Enter your age">
             <!--Gender selection-->
             <label>Gender:</label>
             <div class="radio-group">
-            <input type="radio" name="gender">Male 
-            <input type="radio" name="gender">Female 
+            <label>
+            <input type="radio" name="gender">
+            Male
+            </label> 
+            <label>
+            <input type="radio" name="gender">
+            Female 
+            </label>
             </div>
             <!--Type of service user wants to book-->
             <label>Select Service:</label>
