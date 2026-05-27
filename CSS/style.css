@@ -61,13 +61,13 @@ nav a:hover{
 }
 /* Small slogan under image */
 .tagline{
-    color: deeppink;
+    color: rgb(212, 165, 190);
     font-style: italic;
 }
 /* Styling the book appointment button */
 .btn{
     display: inline-block;
-    background-color: deeppink;
+    background-color: rgb(212, 165, 190);
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
@@ -77,7 +77,7 @@ nav a:hover{
 }
 /* Change button colour when mouse is over it */
 .btn:hover{
-    background-color: black;
+    background-color: rgb(162, 187, 203);
 }
 /* Gives spacing between different sections */
 section{
@@ -91,24 +91,6 @@ ul{
 /* Space between each service */
 ul li{
     margin: 10px 0;
-}
-/* Styling the operating hours and services table  */
-table{
-    width: 60%;
-    border-collapse: collapse;
-    margin: auto;
-    background-color: white;
-}
-/* Table cells */
-th, td{
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-}
-/* Table heading row */
-th{
-    background-color: hotpink;
-    color: white;
 }
 /* Footer at the bottom of the page */
 footer{
@@ -133,7 +115,7 @@ footer{
 .about-section h2{
     margin-top: 40px;
     margin-bottom: 15px;
-    color: deeppink;
+    color: rgb(212, 165, 190);
     font-size: 2rem;
 }
 /* Paragraph styling for about page text */
@@ -219,7 +201,7 @@ footer{
 .services-section h2{
     margin-top: 50px;
     margin-bottom: 20px;
-    color: deeppink;
+    color: rgb(212, 165, 190);
 }
 /* Styling all service tables */
 .services-table{
@@ -232,7 +214,7 @@ footer{
 }
 /* Table headings */
 .services-table th{
-    background-color: deeppink;
+    background-color: rgb(212, 165, 190);
     color: white;
     padding: 15px;
 }
@@ -243,12 +225,15 @@ footer{
 }
 /* Hover effect for rows */
 .services-table tr:hover{
-    background-color: lightskyblue;
+    background-color: rgb(162, 187, 203);
 }
 /* Small note at bottom */
 .price-note{
     margin-top: 20px;
     font-size: 1.1rem;
+}
+.hours-section{
+    text-align: center;
 }
 
 
