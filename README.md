@@ -63,5 +63,5 @@
   [10] Anon, “Fresha.com,” 3 May 2025. [Online]. Available:
       https://www.fresha.com/lp/en/bt/beauty-salons/in/za-johannesburg.
 
-  ##Part_2_Details
+  ##Part_2_Details - CSS Styling and Responsive Design
   This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, media queries, and relative units were implemented to improve user experience across device.
