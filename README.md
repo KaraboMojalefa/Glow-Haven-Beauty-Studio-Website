@@ -24,7 +24,7 @@
   -Week 3: Testing and finalisation
 
   ##PART_1 Details
-  This phase focuses on building the website using HTML only, without styling.
+  This phase focused on building the website using HTML only, without styling.
 
   ##Sitemap
   Home- About
@@ -62,3 +62,6 @@
 
   [10] Anon, “Fresha.com,” 3 May 2025. [Online]. Available:
       https://www.fresha.com/lp/en/bt/beauty-salons/in/za-johannesburg.
+
+  ##Part_2_Details
+  This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, media queries, and relative units were implemented to improve user experience across device.
