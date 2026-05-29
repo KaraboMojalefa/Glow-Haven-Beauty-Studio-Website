@@ -43,6 +43,9 @@ nav a{
     font-weight: bold;
     font-size: 16px;
 }
+nav a:active{
+    color: pink;
+}
 /* Navigation hover effect*/
 nav a:hover{
     color: black;
@@ -305,6 +308,10 @@ select:focus,
 textarea:focus{
     outline: 2px solid rgb(212, 165, 190);
 }
+img{
+        max-width: 100%;
+        height: auto;
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
@@ -359,9 +366,5 @@ textarea:focus{
     }
     .contact-info{
         width: 90%;
-    }
-    img{
-        max-width: 100%;
-        height: auto;
     }
 }
