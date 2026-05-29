@@ -17,7 +17,7 @@
   -Created booking form
   
   ##Version 5
-  -Final updates and testing
+  -Final updates and testing of Part_1
 
   ##Version 6
   -Added external stylesheet
@@ -30,3 +30,8 @@
   ##Version 8
   -Improved typography and colour scheme
   -Styled forms, tables, and gallery
+
+  ##Version 9
+  -Fixed alignment and spacing issues on multiple pages
+  -Tested website responsiveness using browser developer tools
+  -Added responsive screenshots to screenshots folder
