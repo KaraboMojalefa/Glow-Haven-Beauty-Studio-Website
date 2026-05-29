@@ -38,6 +38,23 @@
   ##Technoloigies Used
   -HTML (Only website structure development)
 
+  ##Part_2 Details - CSS Styling and Responsive Design
+  This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, hover effects, media queries, and relative units were implemented to improve user experience across device.
+
+  ##Responsive Design Testing
+  The website was tested using browser developer tools to ensure responsiveness on different screen sizes.
+
+    ###Desktop View
+    -Tested using full screen desktop layout.
+  
+    ###Tablet View
+    -Tested using medium screen layout.
+  
+    ###Mobile View
+    -Tested using mobile responsive layout
+
+  Screenshots of the different screen sizes are included in the Screnshots folder.
+
   ##References
   [1] Unsplash, “Free High-Resolution Photos,” 2026. [Online]. Available: https://unsplash.com  
 
@@ -62,20 +79,3 @@
 
   [10] Anon, “Fresha.com,” 3 May 2025. [Online]. Available:
       https://www.fresha.com/lp/en/bt/beauty-salons/in/za-johannesburg.
-
-  ##Part_2_Details - CSS Styling and Responsive Design
-  This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, media queries, and relative units were implemented to improve user experience across device.
-
-  ##Responsive Design Testing
-  The website was tested using browser developer tools to ensure responsiveness on different screen sizes.
-
-    ###Desktop View
-    -Tested using full screen desktop layout.
-  
-    ###Tablet View
-    -Tested using medium screen layout.
-  
-    ###Mobile View
-    -Tested using mobile responsive layout
-
-  Screenshots of the different screen sizes are included in the Screnshots folder.
