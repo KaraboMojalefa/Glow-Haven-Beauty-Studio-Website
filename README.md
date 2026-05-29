@@ -79,3 +79,23 @@
 
   [10] Anon, “Fresha.com,” 3 May 2025. [Online]. Available:
       https://www.fresha.com/lp/en/bt/beauty-salons/in/za-johannesburg.
+
+  [11] W3SCHOOLS (2019). CSS Tutorial. [online] W3schools.com. Available at:
+      https://www.w3schools.com/css/.
+
+  [12] Rosenblum, M. (n.d.). Cascading Style Sheets (CSS). [online] Available at:
+      https://web.stanford.edu/class/cs142/lectures/CSS.pdf.
+
+  [13] Mozilla.org. (2025). Using media queries - CSS | MDN. [online] Available at:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using.
+
+  [14] Joshi, M. (2025). How to Create Responsive Designs with CSS | BrowserStack. [online] BrowserStack. Available at:
+      https://www.browserstack.com/guide/create-responsive-designs-with-css.
+
+‌
+
+‌
+
+‌
+
+‌
