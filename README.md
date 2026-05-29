@@ -65,3 +65,17 @@
 
   ##Part_2_Details - CSS Styling and Responsive Design
   This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, media queries, and relative units were implemented to improve user experience across device.
+
+  ##Responsive Design Testing
+  The website was tested using browser developer tools to ensure responsiveness on different screen sizes.
+
+    ###Desktop View
+    -Tested using full screen desktop layout.
+  
+    ###Tablet View
+    -Tested using medium screen layout.
+  
+    ###Mobile View
+    -Tested using mobile responsive layout
+
+  Screenshots of the different screen sizes are included in the Screnshots folder.
