@@ -318,6 +318,44 @@ img:hover{
 button:hover{
     transform: translateY(-3px);
 }
+/* Contact form styling */
+#contactForm{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+/* Inputs, dropdown and textarea */
+#contactForm input,
+#contactForm select,
+#contactForm textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Contact form button */
+#contactForm button{
+    background-color: rgb(212, 165, 190);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Button hover effect */
+#contactForm button:hover{
+    background-color: rgb(162, 187, 203);
+}
+/* Success message */
+#response{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
