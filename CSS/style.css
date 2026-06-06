@@ -312,6 +312,12 @@ img{
         max-width: 100%;
         height: auto;
 }
+img:hover{
+    transform: scale(1.05);
+}
+button:hover{
+    transform: translateY(-3px);
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
