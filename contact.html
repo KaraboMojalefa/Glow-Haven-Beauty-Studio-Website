@@ -37,22 +37,27 @@
             <p><b>Location:</b> Johannesburg, 18 Jorissen Street</p>
             <p><b>Operating Hours:</b> Monday - Saturday</p>
         </div>
-        <h2>Send Us a Message</h2>
-        <form id="contactForm">
-            Full Name:<br>
-            <input type="text" id="name" required><br><br>
-            Email Address:<br>
-            <input type="email" id="email" required><br><br>
-            Phone Number:<br>
-            <input type="tel" id="Phone" pattern="[0-9]{10}" placeholder="0123456789" required><br><br>
-            Type of Message:<br>
+        <h2 class="contact-form-title">Send Us a Message</h2>
+        <form class="contact-form">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+            <label for="Phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            <label for="messageType">Type of Message:</label>
             <select id="messageType" required>
                 <option value="">--Select an option--</option>
-                <option>General Question</option>
+                <option>General Enquiry</option>
                 <option>Complaint</option>
                 <option>Feedback</option>
-                <option>Appointment Enquiry</option>
-            </select><br><br>
+                <option>Booking Question</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+            <button type="submit" class="btn">
+                Send Message
+            </button>
         </form>
         <p id="response"></p>
     </main>
