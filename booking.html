@@ -57,7 +57,7 @@
             </div>
             <!-- Type of service user wants to book -->
             <label>Select Service:</label>
-            <select id="bookingService" required>
+            <select id="bookingService">
                 <option value="" disabled selected>--Select an option--</option>
                 <option>Hair Styling</option>
                 <option>Nails</option>
@@ -66,7 +66,7 @@
             </select>
             <!-- Date selection --> 
             <label>Preferred Date:</label>
-            <input type="date" id="bookingDate" required>
+            <input type="date" id="bookingDate">
             <!-- Message -->
             <label>Additional Notes:</label>
             <textarea id="bookingNotes" rows="5"></textarea>
@@ -74,7 +74,7 @@
             <button type="submit">Submit Booking</button>
             <button type="reset">Clear Form</button>
     </form>
-    <p id="bookingResult"></p>
+    <p id="bookingResponse"></p>
 </main>
 <!-- Footer section provides copyright information and closes the webpage structure -->
 <footer>
