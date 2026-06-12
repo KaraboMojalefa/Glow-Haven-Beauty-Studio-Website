@@ -85,5 +85,4 @@ if (bookingForm) {
         " has been received.";
         bookingForm.reset();
     });
-    }
-}
+ }
