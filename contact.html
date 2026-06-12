@@ -39,16 +39,21 @@
             <p><b>Location:</b> Johannesburg, 18 Jorissen Street</p>
             <p><b>Operating Hours:</b> Monday - Saturday</p>
         </div>
+        <h2>Find Us</h2>
+        <iframe src="YOUR_GOOGLE_MAP_EMBED_LINK" width="100%" height="300" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         <h2 class="contact-form-title">Send Us a Message</h2>
         <form class="contact-form">
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" required>
+            <br><br>
             <label for="email">Email Address:</label>
             <input type="email" id="email" required>
+            <br><br>
             <label for="Phone">Phone Number:</label>
-            <input type="tel" id="phone" required>
+            <input type="tel" id="phone"  pattern="[0-9]{10}" placeholder="0712345678" required>
+            <br><br>
             <label for="messageType">Type of Message:</label>
-            <select id="messageType">
+            <select id="messageType" required>
                 <option value="">--Select an option--</option>
                 <option value="general">General Enquiry</option>
                 <option value="complaint">Complaint</option>
@@ -56,12 +61,12 @@
                 <option value="booking">Booking Question</option>
             </select>
             <label for="message">Message:</label>
-            <textarea id="message"></textarea>
+            <textarea id="message" rows="5" required></textarea>
             <button type="submit" class="btn">
                 Send Message
             </button>
         </form>
-        <p id="response"></p>
+        <p id="contactResult"></p>
     </main>
 <!-- Footer section provides copyright information and closes the webpage structure -->
 <footer>
@@ -69,6 +74,6 @@
         Copyright &copy; 2026 - &amp; Developed by <b>Karabo Mojalefa</b>
     </p>
 </footer>
-<script src="..//WEBSITE - KARABO MOJALEFA/JavaScript/script.js"></script>
+<script src="JavaScript/script.js"></script>
 </body>
 </html>
