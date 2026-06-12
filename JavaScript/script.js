@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("Please enter a valid email address");
                 event.preventDefault();
                 return; 
+             }
             if (phone === "" || phone.length < 10) {
                 alert("Please enter a valid phone number (at least 10 digits");
                 event.preventDefault();
