@@ -52,24 +52,38 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 // Booking form validation
 const bookingForm = document.querySelector("#bookingForm");
-if (bookingForm){
-    bookingForm.addEventListener("submit", function(event)){
+if (bookingForm) {
+    bookingForm.addEventListener("submit", function(event){
         event.preventDefault();
+        const name = document.querySelector("#bookingName").value.trim();
+        const email = document.querySelector("#bookingEmail").value.trim();
+        const age = document.querySelector("#bookingAge").value.trim();
         const service = document.querySelector("bookingService").value;
-        let price = "";
-        if(service === "Hair Styling"){
-            price = "R350";
+        const date = document.querySelector("#bookingDate").value;
+        if (name === "") {
+            alert("Please enter your name");
+            return;
         }
-        else if(service = "Nails"){
-            price = "R250";
+         if (!email.includes("@") || !email.includes(".")) {
+                alert("Please enter a valid email address");
+                return;
         }
-        else if(service = "Makeup"){
-            price = "R550";
+        if (age < 1) {
+            alert("Age must be greater than 0");
+            return;
         }
-        else if(service = "Skincare"){
-            price = "R450";
+        if (service === "--Select an option--") {
+            alert("Please select a service");
+            return;
         }
-        document.querySelector("#bookingResult").innerHTML = "Booking received successfully! Estimated service cost: " + price + ". We will contact you shortly to confirm your appointment.";
+        if (date = "") {
+            alert("Please select a booking date");
+            return;
+        }
+        document.querySelector("#bookingResponse").innerHTML = "Thank you, " + name +
+        ". Your booking request for " + service +
+        " has been received.";
         bookingForm.reset();
+    });
     }
 }

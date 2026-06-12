@@ -402,7 +402,7 @@ button:hover{
     background-color: rgb(162, 187, 203);
 }
 /* Booking confirmation message */
-#bookingResult{
+#bookingResponse{
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
