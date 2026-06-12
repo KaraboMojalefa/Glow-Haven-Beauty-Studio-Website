@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return; 
              }
             if (phone === "" || phone.length < 10) {
-                alert("Please enter a valid phone number (at least 10 digits");
+                alert("Please enter a valid phone number (at least 10 digits)");
                 event.preventDefault();
                 return;
             }
@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
             // If everything is correct
-            alert("Message sent successfully!");
+            event.preventDefault();
+            document.getElementById("contactResult").innerHTML = "Thank you! Your message has been sent succesfully.";
+            form.reset();
         });
     }
 });

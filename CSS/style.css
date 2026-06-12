@@ -343,10 +343,11 @@ button:hover{
     font-weight: bold;
 }
 /* Success message */
-#response{
+#contactResult{
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
+    color: green;
 }
 .contact-form-title{
     text-align: center;
