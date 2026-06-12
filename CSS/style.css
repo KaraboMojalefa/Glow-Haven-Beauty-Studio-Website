@@ -354,6 +354,53 @@ button:hover{
     margin-bottom: 50px;
 
 }
+/* Enquiry page section */
+.enquiry-section{
+    text-align: center;
+    padding: 50px 20px;
+}
+/* Main heading */
+.enquiry-section h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+/* Introduction paragraph */
+.enquiry-section p{
+    margin-bottom: 25px;
+}
+/* Enquiry form container */
+.enquiry-form{
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-sizing: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+/* Input fields */
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/* Form buttons */
+.enquiry-form button{
+    background-color: rgb(212, 165, 190);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Button hover effect */
+.enquiry-form button:hover{
+    background-color: rgb(162, 187, 203);
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
