@@ -50,3 +50,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+// Booking form validation
+const bookingForm = document.querySelector("#bookingForm");
+if (bookingForm){
+    bookingForm.addEventListener("submit", function(event)){
+        event.preventDefault();
+        const service = document.querySelector("bookingService").value;
+        let price = "";
+        if(service === "Hair Styling"){
+            price = "R350";
+        }
+        else if(service = "Nails"){
+            price = "R250";
+        }
+        else if(service = "Makeup"){
+            price = "R550";
+        }
+        else if(service = "Skincare"){
+            price = "R450";
+        }
+        document.querySelector("#bookingResult").innerHTML = "Booking received successfully! Estimated service cost: " + price + ". We will contact you shortly to confirm your appointment.";
+        bookingForm.reset();
+    }
+}

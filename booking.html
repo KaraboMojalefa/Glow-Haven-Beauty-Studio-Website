@@ -33,32 +33,32 @@
             Please fill in the form below to schedule your appointment 
             and we will respond shortly.
         </P>
-        <form class="booking-form">
+        <form class="booking-form" id="bookingForm">
             <!-- User enters their full name -->
-            <label></label>Name:</label>
-            <input type="text" required placeholder="Enter your name">
+            <label for="bookingName">Name:</label>
+            <input type="text" id="bookingName" required placeholder="Enter your name">
             <!-- User enters email -->
-            <label>Email:</label>
-            <input type="email" required placeholder="example@gmail.com">
+            <label for="bookingEmail">Email:</label>
+            <input type="email" id="bookingEmail" required placeholder="example@gmail.com">
             <!-- User enters age -->
-            <label>Age:</label>
-            <input type="number" min="1" max="100" required placeholder="Enter your age">
+            <label for="bookingAge">Age:</label>
+            <input type="number" id="bookingAge" min="1" max="100" required placeholder="Enter your age">
             <!-- Gender selection -->
             <label>Gender:</label>
             <div class="radio-group">
             <label>
-            <input type="radio" name="gender">
+            <input type="radio" name="gender" value="Male" required>
             Male
             </label> 
             <label>
-            <input type="radio" name="gender">
+            <input type="radio" name="gender" value="Female" required>
             Female 
             </label>
             </div>
             <!-- Type of service user wants to book -->
             <label>Select Service:</label>
-            <select>
-                <option disabled selected>--Select an option--</option>
+            <select id="bookingService" required>
+                <option value="" disabled selected>--Select an option--</option>
                 <option>Hair Styling</option>
                 <option>Nails</option>
                 <option>Makeup</option>
@@ -66,14 +66,15 @@
             </select>
             <!-- Date selection --> 
             <label>Preferred Date:</label>
-            <input type="date">
+            <input type="date" id="bookingDate" required>
             <!-- Message -->
             <label>Additional Notes:</label>
-            <textarea rows="5"></textarea>
+            <textarea id="bookingNotes" rows="5"></textarea>
             <!-- Buttons -->
             <button type="submit">Submit Booking</button>
             <button type="reset">Clear Form</button>
     </form>
+    <p id="bookingResult"></p>
 </main>
 <!-- Footer section provides copyright information and closes the webpage structure -->
 <footer>
@@ -81,5 +82,6 @@
         Copyright &copy; 2026 - &amp; Developed by <b>Karabo Mojalefa</b>
     </p>
 </footer>
+<script src="JavaScript/script.js"></script>
 </body>
 </html>
