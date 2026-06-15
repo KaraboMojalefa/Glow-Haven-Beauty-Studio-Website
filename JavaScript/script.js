@@ -53,36 +53,97 @@ document.addEventListener("DOMContentLoaded", function() {
 // Booking form validation
 const bookingForm = document.querySelector("#bookingForm");
 if (bookingForm) {
-    bookingForm.addEventListener("submit", function(event){
+    bookingForm.addEventListener("submit", function(event) {
         event.preventDefault();
         const name = document.querySelector("#bookingName").value.trim();
         const email = document.querySelector("#bookingEmail").value.trim();
         const age = document.querySelector("#bookingAge").value.trim();
-        const service = document.querySelector("bookingService").value;
+        const service = document.querySelector("#bookingService").value;
         const date = document.querySelector("#bookingDate").value;
         if (name === "") {
             alert("Please enter your name");
+            event.preventDefault();
             return;
         }
          if (!email.includes("@") || !email.includes(".")) {
                 alert("Please enter a valid email address");
+                event.preventDefault();
                 return;
         }
         if (age < 1) {
             alert("Age must be greater than 0");
+            event.preventDefault();
             return;
         }
         if (service === "--Select an option--") {
             alert("Please select a service");
+            event.preventDefault();
             return;
         }
-        if (date = "") {
+        if (date === "") {
             alert("Please select a booking date");
+            event.preventDefault();
             return;
         }
         document.querySelector("#bookingResponse").innerHTML = "Thank you, " + name +
         ". Your booking request for " + service +
         " has been received.";
         bookingForm.reset();
+    });
+ }
+ // Enquiry form validation
+ const enquiryForm = document.querySelector(".enquiry-form");
+ if (enquiryForm) {
+    enquiryForm.addEventListener("submit", function(event){
+        event.preventDefault();
+        const name = document.querySelector("#enquiryName").value.trim();
+        const service = document.querySelector("#enquiryService").value;
+        if(name === ""){
+            alert("Please enter your name");
+            return;
+        }
+        if(service === ""){
+            alert("Please select a service");
+            return;
+        }
+        document.getElementById("enquiryResult").innerHTML = 
+        "Thank you " + name +
+        ". Our team will contact you shortly regarding " +
+        service + ".";
+        enquiryForm.reset();
+    });
+ }
+ // Search functionality for services page
+ const searchBar = document.getElementById("searchBar");
+ if(searchBar) {
+    searchBar.addEventListener("keyup", function() {
+        let searchValue = searchBar.value.toLowerCase();
+        let rows = document.querySelectorAll(".services-table tr");
+        rows.forEach(function (row, index) {
+            if (index === 0) return;
+            let text = row.textContent.toLowerCase();
+            if (text.includes(searchValue)) {
+                row.style.display = "";
+            }
+            else{
+                row.style.display = "none";
+            }
+        });
+    });
+ }
+ //Gallery Lightbox
+ const galleryImages = document.querySelectorAll(".gallery-container img");
+ const lightbox = document.getElementById("lightbox");
+ const lightboxImage = document.getElementById("lightboxImage");
+ const closeLightbox = document.getElementById("closeLightbox");
+ galleryImages.forEach(function(image){
+    image.addEventListener("click", function(){
+        lightbox.style.display = "flex";
+        lightboxImage.src = image.src;
+    });
+ });
+ if(closeLightbox){
+    closeLightbox.addEventListener("click", function(){
+        lightbox.style.display = "none";
     });
  }
