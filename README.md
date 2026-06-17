@@ -26,31 +26,31 @@
   ##PART_1 Details
   This phase focused on building the website using HTML only, without styling.
 
-  ##Sitemap
+  ###Sitemap
   Home- About
       -Services
       -Gallery
       -Booking
       -Contact
-  ##Changelog
+  ###Changelog
   (Refer to CHANGELOG.md)
 
-  ##Technoloigies Used
+  ###Technoloigies Used
   -HTML (Only website structure development)
 
   ##Part_2 Details - CSS Styling and Responsive Design
   This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, hover effects, media queries,      and relative units were implemented to improve user experience across device.
 
-  ##Responsive Design Testing
+  ###Responsive Design Testing
   The website was tested using browser developer tools to ensure responsiveness on different screen sizes.
 
-    ###Desktop View
+    ####Desktop View
     -Tested using full screen desktop layout.
   
-    ###Tablet View
+    ####Tablet View
     -Tested using medium screen layout.
   
-    ###Mobile View
+    ####Mobile View
     -Tested using mobile responsive layout
 
   Screenshots of the different screen sizes are included in the Screnshots folder.
@@ -58,26 +58,26 @@
   ##Part_3 Details - JavaScript
   This phase focused on the interactive functionality using JavaScript
 
-  ##Form Validation (Contact / Booking / Enquiry forms)
+  ###Form Validation (Contact / Booking / Enquiry forms)
   -Checking if inputs are empty
   -Validating email format
   -Checking phone number length
   -Making sure required fields are selcted
   -Showing success messages
 
-  ##User interaction feedback
+  ###User interaction feedback
   -Showing messages like: "Thank you, your message has been sent"
   -Preventing invalid submissions
 
-  ##Search functionality
+  ###Search functionality
   -Filtering services in a table using search bar
   -Showing/hiding rows based on what the user types
 
-  ##Lightbox / Gallery interaction
+  ###Lightbox / Gallery interaction
   -Clicking images to open a bigger version
   -Closing the image display
 
-  ##DOM manipulation (core JavaScript skill)
+  ##S#DOM manipulation (core JavaScript skill)
   -Using querySelector, getElementById
   -Listening for events like submit, click, keyup
 
