@@ -404,7 +404,6 @@ button:hover{
 /* Booking confirmation message */
 #bookingResponse{
     text-align: center;
-    font-weight: bold;
     margin-top: 20px;
     color: green;
 }

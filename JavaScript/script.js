@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             // If everything is correct
             event.preventDefault();
-            document.getElementById("contactResult").innerHTML = "Thank you! Your message has been sent succesfully.";
+            document.getElementById("contactResult").innerHTML =
+            "Thank you! Your message has been sent succesfully.";
+             document.getElementById("contactResult").style.color = "green";
             form.reset();
         });
     }
@@ -85,9 +87,10 @@ if (bookingForm) {
             event.preventDefault();
             return;
         }
-        document.querySelector("#bookingResponse").innerHTML = "Thank you, " + name +
+        document.querySelector("#bookingResponse").innerHTML = "Form submitted successfully. Thank you, " + name +
         ". Your booking request for " + service +
         " has been received.";
+        document.querySelector("#bookingResponse").style.color = "green";
         bookingForm.reset();
     });
  }
@@ -110,6 +113,7 @@ if (bookingForm) {
         "Thank you " + name +
         ". Our team will contact you shortly regarding " +
         service + ".";
+         document.getElementById("enquiryResult").style.color = "green";
         enquiryForm.reset();
     });
  }
@@ -147,4 +151,11 @@ if (bookingForm) {
     closeLightbox.addEventListener("click", function(){
         lightbox.style.display = "none";
     });
+ }
+ const bookingDate = document.getElementById("bookingDate");
+ if (bookingDate) {
+    let tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    let minDate = tomorrow.toISOString(). split("T")[0];
+    bookingDate.min = minDate;
  }
