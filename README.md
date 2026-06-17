@@ -92,10 +92,20 @@
   [14] Joshi, M. (2025). How to Create Responsive Designs with CSS | BrowserStack. [online] BrowserStack. Available at:
       https://www.browserstack.com/guide/create-responsive-designs-with-css.
 
-‌
+  [15] MDN Web Docs. (n.d.). Functions. [online] Available at:
+      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions.
 
-‌
+  [16] Javacodepoint (2024). Searching Algorithms in Java with Examples - Javacodepoint. [online] Javacodepoint. Available at:                       https://javacodepoint.com/logical-programs/searching-algorithms-in-java-with-examples/.
+  
+‌  [17] Artist, C. (2024). Image Gallery with Lightbox Effect Using HTML, CSS, and JavaScript | Coding Artist. [online] Coding Artist.                 Available at:
+      https://codingartistweb.com/2024/12/image-gallery-with-lightbox-effect-using-html-css-and-javascript/ [Accessed 17 Jun. 2026].
+      
+‌  [18] W3Schools (2019). JavaScript Form Validation. [online] W3schools.com. Available at:
+      https://www.w3schools.com/js/js_validation.asp.
+      
+‌  [19] Usepattern.com. (2025). How to Implement SEO: A Step-by-Step Guide for Beginners. [online] Available at:                                      https://www.usepattern.com/resources/how-to-implement-seo#understanding-keywords [Accessed 17 Jun. 2026].
 
-‌
+  [20] W3Schools (2019). How To Build a Website. [online] W3schools.com. Available at:
+      https://www.w3schools.com/howto/howto_website.asp.
 
-‌
+  [21] https://docs.netlify.com/deploy/create-deploys/
