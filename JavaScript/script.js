@@ -137,7 +137,8 @@ if (bookingForm) {
  const lightboxImage = document.getElementById("lightboxImage");
  const closeLightbox = document.getElementById("closeLightbox");
  galleryImages.forEach(function(image){
-    image.addEventListener("click", function(){
+    image.addEventListener("click", function(event){
+        event.preventDefault();
         lightbox.style.display = "flex";
         lightboxImage.src = image.src;
     });

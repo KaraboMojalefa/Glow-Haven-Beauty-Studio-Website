@@ -427,7 +427,7 @@ button:hover{
 #closeLightbox{
     position: absolute;
     top: 20px;
-    right: 40px;
+    right: 30px;
     color: white;
     font-size: 40px;
     cursor: pointer;
