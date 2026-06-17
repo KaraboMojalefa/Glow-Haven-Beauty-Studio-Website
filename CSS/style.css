@@ -408,13 +408,6 @@ button:hover{
     margin-top: 20px;
     color: green;
 }
-/* Enquiry form confirmation message */
-#enquiryResult{
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    color: green;
-}
 #lightbox{
     display: none;
     position: fixed;
