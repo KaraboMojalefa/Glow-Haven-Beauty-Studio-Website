@@ -119,23 +119,18 @@ if (bookingForm) {
  }
  // Search functionality for services page
  const searchBar = document.getElementById("searchBar");
- if(searchBar) {
-    searchBar.addEventListener("keyup", function() {
-        let searchValue = searchBar.value.toLowerCase();
-        let rows = document.querySelectorAll(".services-table tr");
-        rows.forEach(function (row, index) {
-            if (index === 0) return;
-            let text = row.textContent.toLowerCase();
-            if (text.includes(searchValue)) {
-                row.style.display = "";
-            }
-            else{
-                row.style.display = "none";
-            }
+ if (searchBar) {
+     searchBar.addEventListener("keyup", function() {
+        const value = searchBar.value.toLowerCase();
+        const rows = document.querySelectorAll(".services-table tr");
+        rows.forEach((row, index) => {
+            if (index === 0) return; // Skip header row
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(value) ? "" : "none";
         });
     });
  }
- //Gallery Lightbox
+ // Gallery Lightbox
  const galleryImages = document.querySelectorAll(".gallery-container img");
  const lightbox = document.getElementById("lightbox");
  const lightboxImage = document.getElementById("lightboxImage");
@@ -152,10 +147,21 @@ if (bookingForm) {
         lightbox.style.display = "none";
     });
  }
+ // Restrict users from selecting today's date or past dates when booking
+ // Only feature bookings starting from tomorrow are allowed when booking
  const bookingDate = document.getElementById("bookingDate");
  if (bookingDate) {
     let tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     let minDate = tomorrow.toISOString(). split("T")[0];
     bookingDate.min = minDate;
+ }
+ // Restrict users from selecting today's date or past dates when enquiring
+ // Only feature bookings starting from tomorrow are allowed when enquiring
+ const enquiryDate = document.getElementById("enquiryDate");
+ if (enquiryDate) {
+    let tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    let minDate = tomorrow.toISOString(). split("T")[0];
+    enquiryDate.min = minDate;
  }
