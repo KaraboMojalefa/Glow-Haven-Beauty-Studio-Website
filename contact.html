@@ -43,11 +43,8 @@
         <!-- Embedded map hsowing salon location -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0902688474744!2d28.026839275162033!3d-26.19374167708302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c04d9a7bde3%3A0xb0c7a3927638c2bd!2s18%20Jorissen%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202017!5e0!3m2!1sen!2sza!4v1781271391820!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <h2 class="contact-form-title">Send Us a Message</h2>
-        <form
-        class="contact-form"
-        action="mailto:info@glowhaven.co.za"
-        method="post"
-        enctype="text/plain">
+        <form name="contact" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" required>
             <br><br>
