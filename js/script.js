@@ -117,38 +117,32 @@ if (bookingForm) {
         enquiryForm.reset();
     });
  }
- // Search functionality for services page
- const searchBar = document.getElementById("searchBar");
- if (searchBar) {
-     searchBar.addEventListener("keyup", function() {
-        const value = searchBar.value.toLowerCase().trim();
-        const hair = document.getElementById("hairSection");
-        const nails = document.getElementById("nailSection");
-        const skincare = document.getElementById("skincareSection");
-        const makeup = document.getElementById("makeupSection");
-        // Show all by default if empty
-        if (value === "") {
-            hair.style.display = "";
-            nails.style.display = "";
-            skincare.style.display = "";
-            makeup.style.display = "";
-            return;
-        }
-        // Hide everything first
-        if ("hair services".includes(value) || value === "hair") {
-            hair.style.display = "block";
-        }
-        else if ("nail services".includes(value) || value === "nails" || value === "nail") {
-            nails.style.display = "block";
-        }
-        else if ("skincare".includes(value) || value === "skin") {
-            skincare.style.display = "block";
-        }
-        else if ("makeup".includes(value)) {
-            makeup.style.display = "block";
-        }
+ // Search services by category
+const searchBar = document.getElementById("searchBar");
+
+if (searchBar) {
+
+    searchBar.addEventListener("keyup", function () {
+
+        const value = searchBar.value.toLowerCase();
+
+        const categories = document.querySelectorAll(".service-category");
+
+        categories.forEach(function(category) {
+
+            const text = category.textContent.toLowerCase();
+
+            if (text.includes(value)) {
+                category.style.display = "block";
+            } else {
+                category.style.display = "none";
+            }
+
+        });
+
     });
- }
+
+}
  // Gallery Lightbox
  const galleryImages = document.querySelectorAll(".gallery-container img");
  const lightbox = document.getElementById("lightbox");
