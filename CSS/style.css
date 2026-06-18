@@ -129,7 +129,7 @@ footer{
     margin-top: 40px;
     margin-bottom: 15px;
     color: rgb(212, 165, 190);
-    font-size: 35pxS;
+    font-size: 35px;
 }
 /* Paragraph styling for about page text */
 .about-section p{
@@ -376,7 +376,7 @@ button:hover{
     margin: auto;
     padding: 30px;
     border-radius: 15px;
-    box-sizing: 0px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     text-align: left;
 }
 /* Input fields */
@@ -428,8 +428,10 @@ button:hover{
     top: 20px;
     right: 30px;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
     cursor: pointer;
+    z-index: 10000;
 }
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
@@ -474,10 +476,11 @@ button:hover{
         width: 100%;
     }
     .gallery-container img{
-        width: 90%;
-        height: auto;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
     }
-    .gallery-section{
+    .gallery-section h1{
         font-size: 35px;
     }
     .contact-section h1{
