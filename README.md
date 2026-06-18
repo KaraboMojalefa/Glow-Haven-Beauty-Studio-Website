@@ -39,7 +39,7 @@
   -HTML (Only website structure development)
 
   ##Part_2 Details - CSS Styling and Responsive Design
-  This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, hover effects, media queries,      and relative units were implemented to improve user experience across device.
+  This phase focused on styling the website using external CSS. Responsive design techniques such as flexbox, hover effects, media queries,      and relative    units were implemented to improve user experience across device.
 
   ###Responsive Design Testing
   The website was tested using browser developer tools to ensure responsiveness on different screen sizes.
@@ -57,6 +57,8 @@
 
   ##Part_3 Details - JavaScript
   This phase focused on the interactive functionality using JavaScript
+
+  ##Features implemented:
 
   ###Form Validation (Contact / Booking / Enquiry forms)
   -Checking if inputs are empty
@@ -77,9 +79,15 @@
   -Clicking images to open a bigger version
   -Closing the image display
 
-  ##S#DOM manipulation (core JavaScript skill)
+  ###SDOM manipulation (core JavaScript skill)
   -Using querySelector, getElementById
   -Listening for events like submit, click, keyup
+
+  ##Hosting
+  The website is hosted on Netlify.
+
+  Live website:
+  https://extraordinary-profiterole-a07747.netlify.app
 
   ##References
   [1] Unsplash, “Free High-Resolution Photos,” 2026. [Online]. Available: https://unsplash.com  
