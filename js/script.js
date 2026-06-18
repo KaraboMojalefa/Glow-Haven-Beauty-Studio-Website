@@ -121,13 +121,32 @@ if (bookingForm) {
  const searchBar = document.getElementById("searchBar");
  if (searchBar) {
      searchBar.addEventListener("keyup", function() {
-        const value = searchBar.value.toLowerCase();
-        const rows = document.querySelectorAll(".services-table tr");
-        rows.forEach((row, index) => {
-            if (index === 0) return; // Skip header row
-            const text = row.textContent.toLowerCase();
-            row.style.display = text.includes(value) ? "" : "none";
-        });
+        const value = searchBar.value.toLowerCase().trim();
+        const hair = document.getElementById("hairSection");
+        const nails = document.getElementById("nailSection");
+        const skincare = document.getElementById("skincareSection");
+        const makeup = document.getElementById("makeupSection");
+        // Show all by default if empty
+        if (value === "") {
+            hair.style.display = "";
+            nails.style.display = "";
+            skincare.style.display = "";
+            makeup.style.display = "";
+            return;
+        }
+        // Hide everything first
+        if ("hair services".includes(value) || value === "hair") {
+            hair.style.display = "block";
+        }
+        else if ("nail services".includes(value) || value === "nails" || value === "nail") {
+            nails.style.display = "block";
+        }
+        else if ("skincare".includes(value) || value === "skin") {
+            skincare.style.display = "block";
+        }
+        else if ("makeup".includes(value)) {
+            makeup.style.display = "block";
+        }
     });
  }
  // Gallery Lightbox

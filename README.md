@@ -129,7 +129,8 @@
   [15] MDN Web Docs. (n.d.). Functions. [online] Available at:
       https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions.
 
-  [16] Javacodepoint (2024). Searching Algorithms in Java with Examples - Javacodepoint. [online] Javacodepoint. Available at:                       https://javacodepoint.com/logical-programs/searching-algorithms-in-java-with-examples/.
+  [16] Javacodepoint (2024). Searching Algorithms in Java with Examples - Javacodepoint. [online] Javacodepoint. Available at:              
+    https://javacodepoint.com/logical-programs/searching-algorithms-in-java-with-examples/.
   
 ‌  [17] Artist, C. (2024). Image Gallery with Lightbox Effect Using HTML, CSS, and JavaScript | Coding Artist. [online] Coding Artist.                 Available at:
       https://codingartistweb.com/2024/12/image-gallery-with-lightbox-effect-using-html-css-and-javascript/ [Accessed 17 Jun. 2026].
