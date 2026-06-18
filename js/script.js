@@ -1,4 +1,3 @@
-alert("Javan loaded");
 // Wait until page is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
     // Get the form using class name
