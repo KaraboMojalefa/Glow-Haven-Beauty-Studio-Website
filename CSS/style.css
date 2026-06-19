@@ -469,6 +469,23 @@ button:hover{
 #nextImage:hover{
     color: pink;
 }
+#searchBar,
+#gallerySearch{
+    width: 350px;
+    max-width: 90%;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(212, 165, 190);
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    outline: none;
+}
+#searchBar:focus,
+#gallerySearch:focus{
+    border-color: rgb(162, 187, 203);
+    box-shadow: 0 0 8px rgba(212,165,190,0.5);
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
