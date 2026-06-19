@@ -160,6 +160,35 @@ if (searchBar) {
         lightbox.style.display = "none";
     });
  }
+let currentImageIndex = 0;
+galleryImages.forEach(function(image, index){
+    image.addEventListener("click", function(event){
+        event.preventDefault();
+        currentImageIndex = index;
+        lightbox.style.display = "flex";
+        lightboxImage.src = image.src;
+    });
+});
+const nextImage = document.getElementById("nextImage");
+const prevImage = document.getElementById("prevImage");
+if(nextImage){
+    nextImage.addEventListener("click", function(){
+        currentImageIndex++;
+        if(currentImageIndex >= galleryImages.length){
+            currentImageIndex = 0;
+        }
+        lightboxImage.src = galleryImages[currentImageIndex].src;
+    });
+}
+if(prevImage){
+    prevImage.addEventListener("click", function(){
+        currentImageIndex--;
+        if(currentImageIndex < 0){
+            currentImageIndex = galleryImages.length - 1;
+        }
+        lightboxImage.src = galleryImages[currentImageIndex].src;
+    });
+}
  // Restrict users from selecting today's date or past dates when booking
  // Only feature bookings starting from tomorrow are allowed when booking
  const bookingDate = document.getElementById("bookingDate");

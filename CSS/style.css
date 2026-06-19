@@ -447,6 +447,28 @@ button:hover{
 #searchBar:focus{
     box-shadow: 0 0 10px rgba(212,165,190,0.5);
 }
+#prevImage,
+#nextImage{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10000;
+}
+#prevImage{
+    left: 30px;
+}
+#nextImage{
+    right: 30px;
+}
+#prevImage:hover,
+#nextImage:hover{
+    color: pink;
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
