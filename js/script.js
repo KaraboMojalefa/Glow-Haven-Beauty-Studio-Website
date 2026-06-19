@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             document.getElementById("contactResult").innerHTML =
             "Thank you! Your message has been sent succesfully.";
-             document.getElementById("contactResult").style.color = "green";
+            document.getElementById("contactResult").style.color = "green";
             form.reset();
         });
     }
@@ -119,29 +119,19 @@ if (bookingForm) {
  }
  // Search services by category
 const searchBar = document.getElementById("searchBar");
-
 if (searchBar) {
-
     searchBar.addEventListener("keyup", function () {
-
         const value = searchBar.value.toLowerCase();
-
         const categories = document.querySelectorAll(".service-category");
-
         categories.forEach(function(category) {
-
             const text = category.textContent.toLowerCase();
-
             if (text.includes(value)) {
                 category.style.display = "block";
             } else {
                 category.style.display = "none";
             }
-
         });
-
     });
-
 }
  // Gallery Lightbox
  const galleryImages = document.querySelectorAll(".gallery-container img");
@@ -207,3 +197,19 @@ if(prevImage){
     let minDate = tomorrow.toISOString(). split("T")[0];
     enquiryDate.min = minDate;
  }
+ // Gallery Search
+const gallerySearch = document.getElementById("gallerySearch");
+if (gallerySearch) {
+    gallerySearch.addEventListener("keyup", function () {
+        const value = gallerySearch.value.toLowerCase();
+        const sections = document.querySelectorAll(".gallery-section section");
+        sections.forEach(function(section) {
+            const text = section.textContent.toLowerCase();
+            if (text.includes(value)) {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        });
+    });
+}
