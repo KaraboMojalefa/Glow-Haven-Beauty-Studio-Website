@@ -433,6 +433,20 @@ button:hover{
     cursor: pointer;
     z-index: 10000;
 }
+#searchBar{
+    width: 350px;
+    max-width: 90%;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 2px solid rgb(212, 165, 190);
+    font-size: 18px;
+    outline: none;
+    margin: 20px auto;
+    display: block;
+}
+#searchBar:focus{
+    box-shadow: 0 0 10px rgba(212,165,190,0.5);
+}
 /* Making the website fit better on smaller screens */
 @media (max-width: 768px){
     nav{
